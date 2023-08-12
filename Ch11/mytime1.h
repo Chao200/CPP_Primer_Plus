@@ -1,5 +1,5 @@
-#ifndef MYTIME0_H_
-#define MYTIME0_H_
+#ifndef MYTIME1_H_
+#define MYTIME1_H_
 
 class Time
 {
@@ -13,7 +13,7 @@ public:
     void AddHr(int h);
     void Reset(int h = 0, int m = 0);
     // 返回值不可以是引用，因为是局部变量
-    Time Sum(const Time& t) const;
+    Time operator+(const Time& t) const;
     void Show() const;
 };
 
