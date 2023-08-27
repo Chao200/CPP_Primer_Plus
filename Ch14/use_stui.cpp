@@ -35,3 +35,4 @@ void set(Student& sa, int n)
     for (int i = 0; i < n; ++i) cin >> sa[i];
     while (cin.get() != '\n') continue;
 }
+
